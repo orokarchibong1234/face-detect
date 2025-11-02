@@ -29,11 +29,11 @@ def get_model():
         try:
             if os.path.exists(MODEL_PATH):
                 model = load_model(MODEL_PATH)
-                logger.info("✅ Model loaded successfully from %s", MODEL_PATH)
+                logger.info(" Model loaded successfully from %s", MODEL_PATH)
             else:
-                logger.error("❌ Model file not found at %s", MODEL_PATH)
+                logger.error(" Model file not found at %s", MODEL_PATH)
         except Exception as e:
-            logger.exception("💥 Failed to load model: %s", e)
+            logger.exception(" Failed to load model: %s", e)
     return model
 
 def init_db():

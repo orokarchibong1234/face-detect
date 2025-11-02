@@ -123,4 +123,4 @@ history = model.fit(
 # Save model
 model.save('face_emotionModel.h5')
 
-print("✅ Model trained and saved successfully as face_emotionModel.h5")
+print(" Model trained and saved successfully as face_emotionModel.h5")
